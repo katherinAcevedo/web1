@@ -1,0 +1,10 @@
+<html>
+  <head><title>Producto</title></head>
+  <body>
+    <img src="{{ url_for('static', filename='')}}{{producto.nombre}}.png"/>  
+    <h3>producto: {{producto.nombre}}</h3>
+    <h3>{{producto.precio}}</h3>
+    <br> 
+    <button><a href="{{ url_for('index') }}">Regresar</a></button>
+  </body>
+</html>
